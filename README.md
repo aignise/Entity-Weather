@@ -1,5 +1,37 @@
 # Weather Forecast Bot
 
+# Fetch Weather Forecast Function
+
+This Python function `fetch_weather_forecast` retrieves the hourly weather forecast for a specified location.
+
+## Parameters
+
+- `location` (str): The location for which the weather forecast is requested.
+
+## Returns
+
+The function returns the hourly weather forecast data as a list of dictionaries if the request is successful. Otherwise, it returns None.
+
+# Main Program
+
+This Python script interacts with the OpenAI API to provide weather forecast assistance and general queries.
+
+## Setup
+
+- The environment variables required for the OpenAI API key are loaded using `load_dotenv`.
+- The `entity` module is imported to use functions for creating threads, starting conversations, and getting responses.
+
+## Main Function
+
+The `main` function:
+1. Creates a thread for conversation.
+2. Prompts the user to provide the location for the weather forecast.
+3. Sets up the OpenAI assistant.
+4. Starts the conversation with the user and retrieves the weather forecast response.
+5. Asks the user if further assistance is needed.
+6. Based on the user's response, either requests the weather forecast again or provides general assistance.
+
+
 ## Description
 This is a Flask web application that serves as a weather forecast bot. It allows users to explore weather forecasts based on their specific criteria.
 
